@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	_ "github.com/brianlk/simple-go-service/dir1"
+	"github.com/brianlk/simple-go-service/dir1"
 	_ "github.com/brianlk/simple-go-service/dir2"
 )
 
@@ -20,4 +20,5 @@ func Subtract(x, y int) (res int) {
 func main() {
 	fmt.Println(Add(1, 2))
 	fmt.Println(Subtract(1, 2))
+	fmt.Println(dir1.SayHello())
 }
